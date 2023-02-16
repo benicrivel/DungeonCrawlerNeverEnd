@@ -21,12 +21,14 @@ public class PlayerController : MonoBehaviour
     private bool isInvincible = false;
 
     private SpriteRenderer spriteRenderer;
-    
+    private SpriteRenderer spriteRendererParent;
+
     // Inicialização
     private void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRendererParent = GetComponentInParent<SpriteRenderer>();
     }
 
     // Atualização
@@ -63,13 +65,20 @@ public class PlayerController : MonoBehaviour
         while (isInvincible)
         {
             yield return new WaitForSeconds(blinkTime);
-            spriteRenderer.enabled = !spriteRenderer.enabled;
+            spriteRenderer.enabled = spriteRenderer.enabled = false;
+            spriteRendererParent.enabled = spriteRenderer.enabled = false;
+
             yield return new WaitForSeconds(blinkTime);
-            spriteRenderer.enabled = !spriteRenderer.enabled;
+            spriteRenderer.enabled = spriteRenderer.enabled = true;
+            spriteRendererParent.enabled = spriteRenderer.enabled = true;
+
             yield return new WaitForSeconds(blinkTime);
-            spriteRenderer.enabled = !spriteRenderer.enabled;
+            spriteRenderer.enabled = spriteRenderer.enabled = false;
+            spriteRendererParent.enabled = spriteRenderer.enabled = false;
+
             yield return new WaitForSeconds(blinkTime);
-            spriteRenderer.enabled = spriteRenderer.enabled;
+            spriteRenderer.enabled = spriteRenderer.enabled = true;
+            spriteRendererParent.enabled = spriteRenderer.enabled = true;
         }
     }
     IEnumerator CameraShake()

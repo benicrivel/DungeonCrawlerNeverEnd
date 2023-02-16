@@ -25,6 +25,7 @@ public class EnemyController : MonoBehaviour
             if (timeSinceLastAttack == 0) 
             {
                 Shoot();
+                timeSinceLastAttack = 1;
                 StartCoroutine(TimeToShootEnemy());
             }            
         }
