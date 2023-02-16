@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b70cb197b8e681d4c9c85101f32228f7, type: 3}
   m_Name: Frog
   m_EditorClassIdentifier: 
-  charName: 
-  healthStat: 0
-  strenghtStat: 0
-  speedStat: 0
+  charName: Frog
+  healthStat: 4
+  strenghtStat: 2
+  speedStat: 2

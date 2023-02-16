@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b70cb197b8e681d4c9c85101f32228f7, type: 3}
   m_Name: Skeleton
   m_EditorClassIdentifier: 
-  charName: 
-  healthStat: 0
-  strenghtStat: 0
-  speedStat: 0
+  charName: Skeleton
+  healthStat: 2
+  strenghtStat: 4
+  speedStat: 2

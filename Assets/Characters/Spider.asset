@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b70cb197b8e681d4c9c85101f32228f7, type: 3}
   m_Name: Spider
   m_EditorClassIdentifier: 
-  charName: 
-  hpMax: 0
-  healthStat: 0
-  strenghtStat: 0
-  speedStat: 0
+  charName: Spider
+  healthStat: 3
+  strenghtStat: 3
+  speedStat: 3

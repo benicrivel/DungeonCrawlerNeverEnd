@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b70cb197b8e681d4c9c85101f32228f7, type: 3}
-  m_Name: Zombie
+  m_Name: Ghost
   m_EditorClassIdentifier: 
-  charName: Zombie
-  healthStat: 5
-  strenghtStat: 2
-  speedStat: 1
+  charName: Ghost
+  healthStat: 1
+  strenghtStat: 5
+  speedStat: 3
